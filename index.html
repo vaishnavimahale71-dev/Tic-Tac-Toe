@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="header">
+            <span class="game-label">GAME</span>
+            <h1>Tic Tac Toe</h1>
+            <p>Classic game • Two players • One winner</p>
+        </header>
+
+
+        <!-- Score Section -->
+        <section class="score-section">
+
+            <div class="score-card active-player" id="playerXCard">
+                <div class="player-icon x-icon">X</div>
+
+                <div>
+                    <span class="player-name">PLAYER X</span>
+                    <strong id="scoreX">0</strong>
+                </div>
+            </div>
+
+
+            <div class="vs">
+                VS
+            </div>
+
+
+            <div class="score-card" id="playerOCard">
+                <div class="player-icon o-icon">O</div>
+
+                <div>
+                    <span class="player-name">PLAYER O</span>
+                    <strong id="scoreO">0</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Turn Status -->
+        <div class="status-box">
+            <span class="status-dot"></span>
+            <span id="status">Player X's Turn</span>
+        </div>
+
+
+        <!-- Game Board -->
+        <section class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+
+        <!-- Restart Button -->
+        <button id="restart">
+            <span>↻</span>
+            Restart Game
+        </button>
+
+
+        <footer>
+            Make your move and create three in a row.
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
